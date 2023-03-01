@@ -1,8 +1,8 @@
 const startBTN = document.querySelector("#start");
 const userText = document.querySelector("#userText");
-const userTextContent = userText.querySelector("p").textContent;
+let userTextContent = userText.querySelector("p").textContent;
 const response = document.querySelector("#response");
-const response_text = response.querySelector("p").textContent;
+let response_text = response.querySelector("p").textContent;
 
 startBTN.addEventListener("click", function () {
   let speech = true;
