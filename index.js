@@ -1,5 +1,8 @@
-const userText = document.querySelector("#userText");
 const startBTN = document.querySelector("#start");
+const userText = document.querySelector("#userText");
+const userTextContent = userText.querySelector("p").textContent;
+const response = document.querySelector("#response");
+const response_text = response.querySelector("p").textContent;
 
 startBTN.addEventListener("click", function () {
   let speech = true;
@@ -14,7 +17,11 @@ startBTN.addEventListener("click", function () {
       .map((result) => result.transcript)
       .join("");
 
-    userText.querySelector("p").textContent = transcript;
+    userTextContent = transcript;
+
+    if (userTextContent.contains("activate")) {
+      response = "I am activated";
+    }
   });
 
   if (speech == true) {
