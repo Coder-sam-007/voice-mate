@@ -25,8 +25,12 @@ async function getAnswer(question) {
   // const doc = parser.parseFromString(html, "text/html");
   // const answer = doc.querySelector('div[data-attrid="wa:/answer"]').textContent;
 
-  if (question.match(/activate/gi)) {
-    return "voice assistance is activated";
+  if (question.match(/hello/gi)) {
+    return "hello buddy wassup..";
+  } else if (question.match(/what is life/gi)) {
+    return "Life is a mess bro.. life sucks just die u mada fukker..";
+  } else {
+    return "You are a pussy bro..";
   }
 
   // const query = question;
