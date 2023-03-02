@@ -25,6 +25,14 @@ h1 {
   font-size: 3rem;
 }
 
+h2 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
 main {
   width: min(1100px, 85%);
   margin: 0 auto;
