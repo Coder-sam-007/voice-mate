@@ -19,8 +19,8 @@ startBTN.addEventListener("click", function () {
 
     userTextContent = transcript;
 
-    if (userTextContent.contains("activate")) {
-      response = "I am activated";
+    if (userTextContent.includes("activate")) {
+      response_text = "I am activated";
     }
   });
 

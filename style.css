@@ -26,7 +26,7 @@ h1 {
 }
 
 main {
-  width: min(1100px, 90%);
+  width: min(1100px, 85%);
   margin: 0 auto;
   background: linear-gradient(45deg, blueviolet, hotpink);
   padding: 1rem 4rem;
@@ -61,7 +61,7 @@ main {
 
 .container > * {
   background-color: rgba(255, 255, 255, 0.318);
-  margin: 2rem;
+  margin: 2rem 1rem;
   padding: 1rem;
   border-radius: var(--br-rs);
 }
@@ -78,4 +78,16 @@ main {
     rgba(154, 154, 255, 0.418)
   );
   border-radius: var(--br-rs);
+}
+
+@media (max-width: 800px) {
+  main {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    padding: 1rem 0;
+  }
 }
