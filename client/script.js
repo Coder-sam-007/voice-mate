@@ -11,6 +11,10 @@ recognition.interimResults = false;
 const getAnswear = async (question) => {
   const response = await fetch("https://kanhas-ai.onrender.com", {
     method: "POST",
+    cors: {
+      origin: "*",
+      methods: ["GET", "POST"],
+    },
     headers: {
       "Content-Type": "application/json",
     },
