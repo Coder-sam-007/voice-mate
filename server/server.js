@@ -3,6 +3,8 @@ import * as dotenv from "dotenv";
 import cors from "cors";
 import { Configuration, OpenAIApi } from "openai";
 
+const PORT = process.env.PORT || 5000;
+
 dotenv.config();
 
 const configuration = new Configuration({
@@ -12,21 +14,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 const app = express();
-app.use(
-  (req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.header(
-      "Access-Control-Allow-Headers",
-      "Origin, X-Requested-With, Content-Type, Accept"
-    );
-    next();
-  },
-  cors({
-    origin: "*",
-    methods: "GET,POST,OPTIONS",
-    allowedHeaders: "Content-Type",
-  })
-);
+app.use(cors());
 app.use(express.json());
 
 app.get("/", async (req, res) => {
@@ -57,6 +45,6 @@ app.post("/", async (req, res) => {
   }
 });
 
-app.listen(5000, () =>
-  console.log("AI server started on https://kanhas-ai.onrender.com")
+app.listen(PORT, () =>
+  console.log("AI server started on http://localhost:5000")
 );
