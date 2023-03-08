@@ -1,5 +1,6 @@
 {
-  "name": "kanha-ai",
+  "name": "voice-mate",
+  "author": "Sameer jain",
   "private": true,
   "version": "0.0.0",
   "type": "module",
