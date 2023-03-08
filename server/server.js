@@ -17,6 +17,7 @@ app.use(
     origin: "*",
     methods: "GET,POST,OPTIONS",
     allowedHeaders: "Content-Type",
+    AccessControlAllowOrigin: "*",
   })
 );
 app.use(express.json());
