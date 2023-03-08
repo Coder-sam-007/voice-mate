@@ -9,7 +9,7 @@ const recognition = new SpeechRecognition();
 recognition.interimResults = false;
 
 const getAnswear = async (question) => {
-  const response = await fetch("http://localhost:5000", {
+  const response = await fetch("https://kanhas-ai.onrender.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
