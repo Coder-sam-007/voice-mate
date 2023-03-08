@@ -11,13 +11,15 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-const corsOptions = {
-  origin: "*",
-  optionsSuccessStatus: 200,
-};
-
 const app = express();
-app.use(cors(corsOptions));
+app.use(
+  cors({
+    origin: "*",
+    methods: "GET,POST,OPTIONS",
+    allowedHeaders: "Content-Type",
+    AccessControlAllowOrigin: "*",
+  })
+);
 app.use(express.json());
 
 app.get("/", async (req, res) => {
