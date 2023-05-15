@@ -1,28 +1,30 @@
-Voice Assistant Website
-This is a website that uses the OpenAI's ChatGPT API to provide voice assistant capabilities to users. The chatbot can answer questions, provide recommendations, and engage in natural language conversation.
+# Voice Mate
 
-Getting Started
-To use the voice assistant, simply navigate to the website and click on the microphone icon. You will be prompted to give permission to access your microphone. Once you have granted permission, you can begin speaking to the chatbot.
+Voice Mate is a web application that allows users to interact with a voice-enabled virtual assistant. Users can ask questions or provide prompts, and the virtual assistant will generate responses based on the input.
 
-Features
-The voice assistant has a variety of features, including:
+## Usage
+1. Visit the website at [https://voice-mate.vercel.app/](https://voice-mate.vercel.app/).
+2. Click on the "Start" button to activate the voice recognition feature.
+3. Speak your query or prompt clearly into the microphone.
+4. The application will display the recognized text in the "Your Query" section.
+5. The virtual assistant will process the input and generate a response, which will be displayed in the "Response" section.
+6. The response will also be spoken out loud by the virtual assistant.
 
-Answering questions: You can ask the chatbot any question and it will do its best to provide a helpful answer.
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+- SpeechRecognition API
+- SpeechSynthesis API
+- Chat GPT API
 
-Providing recommendations: If you're looking for a recommendation for a restaurant, movie, or anything else, the chatbot can provide suggestions based on your preferences.
+## Note
+- The virtual assistant in Voice Mate is powered by the Chat GPT API, which provides intelligent responses based on the input.
+- If the virtual assistant is not generating responses or not working as expected, it may indicate that the free usage period for the Chat GPT API has expired. In such cases, please note that the functionality might be temporarily unavailable, and we apologize for the inconvenience.
 
-Engaging in conversation: The chatbot is designed to engage in natural language conversation, so you can chat with it just like you would with a human.
+## Installation
+No installation is required to use the Voice Mate application. Simply visit the website mentioned above to access it.
 
-Customizing preferences: You can customize your preferences for certain types of recommendations, such as food preferences or movie genres.
+## Contributing
+Contributions to the Voice Mate project are welcome! If you find any issues or have ideas for enhancements, please open an issue or submit a pull request.
 
-Technologies Used
-The website uses OpenAI's ChatGPT API to power the voice assistant. The website is built using HTML, CSS, and JavaScript.
-
-Contributing
-If you would like to contribute to the development of the voice assistant website, please submit a pull request.
-
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
-
-Acknowledgments
-Thanks to OpenAI for providing the ChatGPT API and making it available for use in this project.
